@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>passwordGenerator</title>
+	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css'>
+	<link rel='stylesheet' href='style.css'>
+</head>
+
+<body>
+
+	<div class="container">
+		<h2>Password Generator</h2>
+		<div class="result-container">
+			<span id="result"></span>
+			<button class="btn" id="clipboard">
+				<i class="far fa-clipboard"></i>
+			</button>
+		</div>
+		<div class="settings">
+			<div class="setting">
+				<label>Password length</label>
+				<input type="number" id="length" min='4' max='20' value='20' />
+			</div>
+			<div class="setting">
+				<label>Include uppercase letters</label>
+				<input type="checkbox" id="uppercase" checked />
+			</div>
+			<div class="setting">
+				<label>Include lowercase letters</label>
+				<input type="checkbox" id="lowercase" checked />
+			</div>
+			<div class="setting">
+				<label>Include numbers</label>
+				<input type="checkbox" id="numbers" checked />
+			</div>
+			<div class="setting">
+				<label>Include symbols</label>
+				<input type="checkbox" id="symbols" checked />
+			</div>
+		</div>
+		<button class="btn btn-large" id="generate">
+			Generate Password
+		</button>
+	</div>
+
+	<!-- SOCIAL ICONS -->
+
+	<div class="social-panel-container">
+		<div class="social-panel">
+			<p>Created With <i class="fa fa-heart"></i> By
+				<a target="_blank" href="https://prashant-kumar.herokuapp.com/">Prashant</a>
+			</p>
+			<button class="close-btn"><i class="fas fa-times"></i></button>
+			<h4>Get In Touch On</h4>
+			<ul>
+				<li>
+					<a href="https://twitter.com/devprashantt" target="_blank">
+						<i class="fab fa-twitter"></i>
+					</a>
+				</li>
+				<li>
+					<a href="https://linkedin.com/in/devprashantt" target="_blank">
+						<i class="fab fa-linkedin"></i>
+					</a>
+				</li>
+				<li>
+					<a href="https://facebook.com/prashanntt" target="_blank">
+						<i class="fab fa-facebook"></i>
+					</a>
+				</li>
+				<li>
+					<a href="https://instagram.com/king11prashant11" target="_blank">
+						<i class="fab fa-instagram"></i>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- FLOATING WINDOW -->
+
+	<button class="floating-btn">
+		Get In Touch
+	</button>
+
+	<div class="floating-text">
+		<a href="https://prashant-kumar.herokuapp.com/" target="_blank">
+			Build By Prashant<br>In Guidence Of Florin
+		</a>
+	</div>
+
+	<script src="script.js"></script>
+
+</body>
+
+</html>
